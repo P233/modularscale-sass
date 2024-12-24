@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "stylelint src/modularscale.scss",
     "test": "jest --silent",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -33,14 +33,14 @@
     "prettier": "^3.4.2",
     "sass": "^1.83.0",
     "sass-true": "^8.1.0",
-    "stylelint": "^16.12.0"
+    "stylelint": "^16.12.0",
+    "stylelint-prettier": "^5.0.2"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "lint-staged": {
     "*.scss": [
-      "prettier --write",
       "stylelint --fix"
     ]
   },
