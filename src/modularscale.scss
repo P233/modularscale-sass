@@ -15,9 +15,11 @@ $default-ratio: 1.5 !default;
     @return list.append($list, $value);
   } @else {
     $_list: ($value);
+
     @each $v in $list {
       $_list: _insert($_list, $v);
     }
+
     @return $_list;
   }
 }
@@ -35,6 +37,7 @@ $default-ratio: 1.5 !default;
       @while ($_base > $_0-base) {
         $_base: math.div($_base, $ratio);
       }
+
       $_base: $_base * $ratio;
     } @else if $_base < $_0-base {
       @while $_base < $_0-base {
