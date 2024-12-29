@@ -4,13 +4,9 @@
   "description": "A lite dart-sass implementation for modularscale-sass.",
   "main": "./src/modularscale.scss",
   "scripts": {
-    "lint": "stylelint src/modularscale.scss",
-    "test": "jest --silent",
+    "test": "jest",
+    "lint": "stylelint --fix src/modularscale.scss",
     "prepare": "husky"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/p233-studio/ms-sass.git"
   },
   "keywords": [
     "sass",
@@ -18,17 +14,21 @@
     "modularscale",
     "typography"
   ],
-  "author": "Peiwen Lu",
-  "license": "MIT",
+  "homepage": "https://github.com/p233-studio/ms-sass#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p233-studio/ms-sass.git"
+  },
   "bugs": {
     "url": "https://github.com/p233-studio/ms-sass/issues"
   },
-  "homepage": "https://github.com/p233-studio/ms-sass#readme",
+  "license": "MIT",
+  "author": "Peiwen Lu",
   "devDependencies": {
-    "@p233/stylelint-config-scss": "^4.0.2",
+    "@p233/stylelint-config-scss": "^4.1.0",
     "husky": "^9.1.7",
     "jest": "^29.7.0",
-    "lint-staged": "^15.2.11",
+    "lint-staged": "^15.3.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
     "sass": "^1.83.0",

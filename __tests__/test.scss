@@ -1,6 +1,6 @@
 @use "sass:math";
+@use "true" as *;
 
-@import "true";
 @import "../src/modularscale";
 
 @function _roundTo3DecimalPlaces($number) {
